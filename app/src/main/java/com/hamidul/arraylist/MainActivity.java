@@ -69,8 +69,9 @@ public class MainActivity extends AppCompatActivity {
             HashMap <String,String> hashMap1 = arrayList.get(position);
             String name = hashMap1.get("name");
             String mobile = hashMap1.get("mobile");
+            int count = position+1;
 
-            tvName.setText(name);
+            tvName.setText(count+" "+name);
             tvMobile.setText(mobile);
 
             imageView.setOnClickListener(new View.OnClickListener() {
